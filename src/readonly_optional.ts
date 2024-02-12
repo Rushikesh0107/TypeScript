@@ -1,5 +1,5 @@
-type User = {
-    readonly _id: string,
+type User1 = {
+    _id: string,
     email: string,
     password: string,
     isPaid: boolean
@@ -9,7 +9,7 @@ type User = {
 //connot change the _id anywhere
 //?
 
-function newUser(user: User){
+function newUser(user: User1){
     return user;
 }
 
