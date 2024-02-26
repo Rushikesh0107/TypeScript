@@ -14,10 +14,12 @@ interface UserInGeneric {
 let elm = getFirstElement<number>([1,2,3,4]) //type : number
 let elm1 = getFirstElement<string>(["a","b","c","d"])  //type: string
 let elm2 = getFirstElement<boolean>([true,false,true,false]) //type: boolean
+let elm3 = getFirstElement([ 1, 3, "happpy", true]) //type: (string | number | boolean)[]
 let userInGeneric = getFirstElement<UserInGeneric>([{name: "John", age: 25}]) //type: User
 
 console.log(typeof elm);
 console.log(typeof elm1);
 console.log(typeof elm2);
+console.log(typeof elm3);
 console.log(typeof userInGeneric);
 

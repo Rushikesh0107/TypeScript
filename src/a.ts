@@ -14,7 +14,7 @@ const greet = (user: User) : void => {
     console.log("Hello " + user.firstName);
 }
 
-const user = {
+export const user = {
     firstName: 'John',
     lastName: "david",
     age: 88
